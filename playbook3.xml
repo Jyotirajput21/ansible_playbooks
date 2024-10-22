@@ -1,0 +1,5 @@
+---
+
+- name: install git on all servers and clone a remote git repo
+hosts:
+
