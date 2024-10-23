@@ -1,0 +1,15 @@
+---
+- name: Fetch file from server1
+  hosts: 172.31.46.242
+  tasks:
+    - name: Fetch file file
+      fetch:
+        src: file1
+        dest: /tmp
+- name: copy file to server2
+  hosts: 172.31.47.253
+  tasks:
+    - name: copy file 
+      copy: 
+        src: /tmp/172.31.46.242/file1
+        dest: /home/ubuntu  
