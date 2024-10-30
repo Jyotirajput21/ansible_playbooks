@@ -1,0 +1,8 @@
+---
+- name: create files
+  hosts: webserver
+  tasks:
+    - name: create file
+      file: 
+        name: "{{d}}"
+        state: "{{e}}"
